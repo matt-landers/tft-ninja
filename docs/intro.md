@@ -1,47 +1,39 @@
 ---
+id: overview
+title: Overview
 sidebar_position: 1
 ---
 
 # Overview
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Welcome to our comprehensive Teamfight Tactics (TFT) documentation site. Whether you're a newcomer looking to learn the basics or a seasoned player aiming to refine your strategies, our guides and resources are here to assist you on your journey through the game. This overview provides a snapshot of the documentation available and helps you navigate our content more effectively.
 
-## Getting Started
+## What's Inside
 
-Get started by **creating a new site**.
+Our documentation is organized into several key sections, each designed to cover different aspects of TFT gameplay. Here's what you can expect to find:
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+### Getting Started
 
-### What you'll need
+- **Introduction to TFT:** Learn about the game's objectives, gameplay mechanics, and what makes it unique.
+- **How to Play:** A step-by-step guide on getting started with TFT, including installation and basic gameplay instructions.
+- **Game Phases:** Understand the different phases of a TFT match and what you should be doing in each phase.
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+### Items
 
-## Generate a new site
+- **Item Basics:** Introduction to items in TFT and how to use them effectively.
+- **Advanced Item Strategies:** In-depth strategies for item combinations and optimal usage.
 
-Generate a new Docusaurus site using the **classic template**.
+### Advanced Tactics
 
-The classic template will automatically be added to your project after you run the command:
+- **Positioning:** Detailed advice on champion placement and how to outmaneuver your opponents.
+- **Economy Management:** Mastering the gold economy to maximize your team's potential.
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+## Contribute to the Docs
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+Every page on our site has an "Edit this page" link, allowing you to suggest changes or additions to the content. We encourage you to contribute to the conversation and help us make this the ultimate resource for TFT.
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+## Start Exploring
 
-## Start your site
+Now that you have an overview of what our documentation offers, dive into the sections that interest you most. Whether you're looking to master the basics or delve into advanced strategies, our guides are here to support your journey through every phase of the game.
 
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+Thank you for visiting, and may your strategic choices lead you to victory!
