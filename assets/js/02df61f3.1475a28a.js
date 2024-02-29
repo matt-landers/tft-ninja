@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunktft_ninja=self.webpackChunktft_ninja||[]).push([[721],{7580:t=>{t.exports=JSON.parse('{"permalink":"/tft-ninja/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

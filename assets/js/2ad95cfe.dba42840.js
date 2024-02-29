@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunktft_ninja=self.webpackChunktft_ninja||[]).push([[754],{180:t=>{t.exports=JSON.parse('{"label":"hello","permalink":"/tft-ninja/blog/tags/hello","allTagsPath":"/tft-ninja/blog/tags","count":1,"unlisted":false}')}}]);
