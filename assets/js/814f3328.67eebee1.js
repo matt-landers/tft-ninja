@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunktft_ninja=self.webpackChunktft_ninja||[]).push([[472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Welcome","permalink":"/tft-ninja/blog/welcome","unlisted":false}]}')}}]);
