@@ -1,6 +1,6 @@
 ---
 id: game-phases
-title: Game Phases in TFT
+title: Game Phases
 sidebar_position: 1
 ---
 

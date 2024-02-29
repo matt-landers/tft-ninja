@@ -1,0 +1,8 @@
+{
+  "label": "Items",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Facts about how the game works."
+  }
+}
