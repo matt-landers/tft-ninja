@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://matt-landers.github.io/blog</id>
     <title>TFT Ninja Blog</title>
-    <updated>2021-08-26T00:00:00.000Z</updated>
+    <updated>2024-03-01T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://matt-landers.github.io/blog"/>
     <subtitle>TFT Ninja Blog</subtitle>
@@ -11,20 +11,24 @@
         <title type="html"><![CDATA[Welcome]]></title>
         <id>https://matt-landers.github.io/blog/welcome</id>
         <link href="https://matt-landers.github.io/blog/welcome"/>
-        <updated>2021-08-26T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Docusaurus blogging features are powered by the blog plugin.]]></summary>
-        <content type="html"><![CDATA[<p><a href="https://docusaurus.io/docs/blog" target="_blank" rel="noopener noreferrer">Docusaurus blogging features</a> are powered by the <a href="https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog" target="_blank" rel="noopener noreferrer">blog plugin</a>.</p>
-<p>Simply add Markdown files (or folders) to the <code>blog</code> directory.</p>
-<p>Regular blog authors can be added to <code>authors.yml</code>.</p>
-<p>The blog post date can be extracted from filenames, such as:</p>
+        <updated>2024-03-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Hello, tacticians! Welcome to the launch of our brand new documentation site, dedicated entirely to Teamfight Tactics (TFT). Whether you're just embarking on your journey in the Convergence or you're a seasoned player aiming for the top of the ladder, this site is crafted with all of you in mind.]]></summary>
+        <content type="html"><![CDATA[<p>Hello, tacticians! Welcome to the launch of our brand new documentation site, dedicated entirely to Teamfight Tactics (TFT). Whether you're just embarking on your journey in the Convergence or you're a seasoned player aiming for the top of the ladder, this site is crafted with all of you in mind.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="our-mission">Our Mission<a href="https://matt-landers.github.io/blog/welcome#our-mission" class="hash-link" aria-label="Direct link to Our Mission" title="Direct link to Our Mission">​</a></h2>
+<p>Our mission is simple: to provide you with the most comprehensive, up-to-date, and accessible resources to not just play TFT, but to excel at it. The world of TFT is vast and ever-changing, with new sets, champions, and strategies emerging regularly. Navigating this alone can be daunting, which is why we've created a space to support your growth and foster a community of like-minded enthusiasts.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-youll-find-here">What You'll Find Here<a href="https://matt-landers.github.io/blog/welcome#what-youll-find-here" class="hash-link" aria-label="Direct link to What You'll Find Here" title="Direct link to What You'll Find Here">​</a></h2>
 <ul>
-<li><code>2019-05-30-welcome.md</code></li>
-<li><code>2019-05-30-welcome/index.md</code></li>
+<li><strong>The Missing Manual:</strong> TFT is a complex game that is ever changing. Our goal is to provide you with the "missing manual" to help you navigate the game and its mechanics.</li>
+<li><strong>Common Strategies:</strong> What does it mean to reroll? When should you greed items? We'll cover these and other common strategies to help you improve your game.</li>
+<li><strong>Advanced Strategies:</strong> For the more experienced players, we'll dive into advanced strategies and tactics to help you climb the ladder.</li>
 </ul>
-<p>A blog post folder can be convenient to co-locate blog post images:</p>
-<p><img decoding="async" loading="lazy" alt="Docusaurus Plushie" src="https://matt-landers.github.io/assets/images/docusaurus-plushie-banner-a60f7593abca1e3eef26a9afa244e4fb.jpeg" width="1500" height="500" class="img_ev3q"></p>
-<p>The blog supports tags as well!</p>
-<p><strong>And if you don't want a blog</strong>: just delete this directory, and use <code>blog: false</code> in your Docusaurus config.</p>]]></content>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="join-the-conversation">Join the Conversation<a href="https://matt-landers.github.io/blog/welcome#join-the-conversation" class="hash-link" aria-label="Direct link to Join the Conversation" title="Direct link to Join the Conversation">​</a></h2>
+<p>We believe that the strength of the TFT community lies in its diversity and willingness to share knowledge. That's why we encourage you to contribute to the conversation. Each page on our site has an "Edit this page" link, allowing you to suggest changes or additions to the content. We're excited to see the community come together to make this the ultimate resource for TFT.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="stay-updated">Stay Updated<a href="https://matt-landers.github.io/blog/welcome#stay-updated" class="hash-link" aria-label="Direct link to Stay Updated" title="Direct link to Stay Updated">​</a></h2>
+<p>The landscape of TFT is always evolving, and so will this site. We'll be updating content regularly to ensure you have access to the latest information.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="your-journey-begins-now">Your Journey Begins Now<a href="https://matt-landers.github.io/blog/welcome#your-journey-begins-now" class="hash-link" aria-label="Direct link to Your Journey Begins Now" title="Direct link to Your Journey Begins Now">​</a></h2>
+<p>We're here to support your journey through the Convergence, from your first match to your hundredth victory. Explore the site, arm yourself with knowledge, and step into the arena with confidence.</p>
+<p>Welcome aboard, and may the odds be ever in your favor!</p>]]></content>
         <author>
             <name>Kickette</name>
             <uri>https://x.com/KicketteTFT</uri>
