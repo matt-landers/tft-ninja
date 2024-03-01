@@ -12,15 +12,23 @@ In Teamfight Tactics (TFT), item components are the foundational elements used t
 
 Item components are basic items that grant specific stats or effects to the champions equipped with them. Each component can be combined with another component to create a completed item, which provides enhanced stats and unique abilities. There are nine basic item components in TFT, each offering different stat boosts:
 
-1. **B.F. Sword:** Increases Attack Damage.
-2. **Recurve Bow:** Increases Attack Speed.
-3. **Needlessly Large Rod:** Increases Spell Power.
-4. **Tear of the Goddess:** Increases Mana.
-5. **Chain Vest:** Increases Armor.
-6. **Negatron Cloak:** Increases Magic Resist.
-7. **Giant's Belt:** Increases Health.
-8. **Sparring Gloves:** Provides Critical Strike Chance.
-9. **Spatula:** Used for special item combinations that can be used to create an emblem or a tactician's crown.
+<img src="/img/tft/items/BFSword.avif" width="32" /> **B.F. Sword:** Increases Attack Damage.
+
+<img src="/img/tft/items/RecurveBow.avif" width="32" /> **Recurve Bow:** Increases Attack Speed.
+
+<img src="/img/tft/items/NeedlesslyLargeRod.avif" width="32" /> **Needlessly Large Rod:** Increases Spell Power.
+
+<img src="/img/tft/items/TearOfTheGoddess.avif" width="32" /> **Tear of the Goddess:** Increases Mana.
+
+<img src="/img/tft/items/ChainVest.avif" width="32" /> **Chain Vest:** Increases Armor.
+
+<img src="/img/tft/items/NegatronCloak.avif" width="32" /> **Negatron Cloak:** Increases Magic Resist.
+
+<img src="/img/tft/items/GiantsBelt.avif" width="32" /> **Giant's Belt:** Increases Health.
+
+<img src="/img/tft/items/SparringGloves.avif" width="32" /> **Sparring Gloves:** Provides Critical Strike Chance.
+
+<img src="/img/tft/items/Spatula.avif" width="32" /> **Spatula:** Used for special item combinations that can be used to create an emblem or a tactician's crown.
 
 ## Combining Components
 
