@@ -1,7 +1,7 @@
 ---
 id: item-bags
 title: Item Bags
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # Understanding Item Bags in TFT
