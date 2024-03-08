@@ -72,6 +72,11 @@ const config: Config = {
           position: "left",
           label: "Docs",
         },
+        {
+          to: "/docs/category/inkborn-fables",
+          label: "Set 11",
+          position: "left",
+        },
         { to: "/blog", label: "Blog", position: "left" },
         {
           href: "https://github.com/matt-landers/tft-ninja",
