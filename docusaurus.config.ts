@@ -7,6 +7,31 @@ const config: Config = {
   tagline: "The missing TeamFight Tactics manual",
   favicon: "img/favicon.ico",
 
+  headTags: [
+    {
+      tagName: "link",
+      attributes: {
+        rel: "preconnect",
+        href: "https://fonts.googleapis.com",
+      },
+    },
+    {
+      tagName: "link",
+      attributes: {
+        rel: "preconnect",
+        href: "https://fonts.gstatic.com",
+        crossorigin: "anonymous",
+      },
+    },
+    {
+      tagName: "link",
+      attributes: {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Merienda:wght@700&family=Roboto:wght@300;400;500;700&display=swap",
+      },
+    },
+  ],
+
   // Set the production url of your site here
   url: "https://matt-landers.github.io",
   // Set the /<baseUrl>/ pathname under which your site is served
@@ -40,12 +65,7 @@ const config: Config = {
           // Remove this to remove the "edit this page" links.
           editUrl: "https://github.com/matt-landers/tft-ninja/blob/main/",
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/matt-landers/tft-ninja/blob/main/",
-        },
+        blog: false,
         theme: {
           customCss: "./src/css/custom.css",
         },
@@ -57,10 +77,14 @@ const config: Config = {
   ],
 
   themeConfig: {
+    colorMode: {
+      defaultMode: "dark",
+    },
     // Replace with your project's social card
     image: "img/docusaurus-social-card.jpg",
     navbar: {
       title: "TFT Ninja",
+      style: "dark",
       logo: {
         alt: "TFT Ninja Logo",
         src: "img/logo.svg",
@@ -72,12 +96,6 @@ const config: Config = {
           position: "left",
           label: "Docs",
         },
-        {
-          to: "/docs/category/inkborn-fables",
-          label: "Set 11",
-          position: "left",
-        },
-        { to: "/blog", label: "Blog", position: "left" },
         {
           href: "https://github.com/matt-landers/tft-ninja",
           label: "GitHub",
@@ -114,10 +132,6 @@ const config: Config = {
           title: "More",
           items: [
             {
-              label: "Blog",
-              to: "/blog",
-            },
-            {
               label: "GitHub",
               href: "https://github.com/matt-landers/tft-ninja",
             },
@@ -127,7 +141,7 @@ const config: Config = {
       copyright: `Copyright © ${new Date().getFullYear()} TFT Ninja, Built with Docusaurus.`,
     },
     prism: {
-      theme: prismThemes.github,
+      theme: prismThemes.dracula,
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,

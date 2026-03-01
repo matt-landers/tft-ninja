@@ -1,11 +1,87 @@
 .features {
-  display: flex;
-  align-items: center;
-  padding: 2rem 0;
-  width: 100%;
+  padding: 3rem 0 4rem;
+  background: var(--tft-bg-primary, #0d1117);
 }
 
-.featureSvg {
-  height: 200px;
-  width: 200px;
+.featureRow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.featureCol {
+  display: flex;
+}
+
+.featureCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  background: var(--tft-bg-secondary, #161b22);
+  border: 1px solid var(--tft-border, #30363d);
+  border-radius: 10px;
+  width: 100%;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.featureCard:hover {
+  border-color: var(--tft-accent-blue, #52a9ff);
+  box-shadow: 0 0 24px rgba(82, 169, 255, 0.12);
+  transform: translateY(-2px);
+}
+
+.featureIconWrap {
+  margin-bottom: 1.25rem;
+}
+
+.featureIcon {
+  width: 64px;
+  height: 64px;
+}
+
+.featureTitle {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--tft-text-primary, #ffffff);
+  margin-bottom: 0.5rem;
+}
+
+.featureDescription {
+  font-size: 0.9rem;
+  color: var(--tft-text-secondary, #8b949e);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Light theme fallback */
+[data-theme="light"] .features {
+  background: #f6f8fa;
+}
+
+[data-theme="light"] .featureCard {
+  background: #ffffff;
+  border-color: #d0d7de;
+}
+
+[data-theme="light"] .featureCard:hover {
+  border-color: #52a9ff;
+  box-shadow: 0 0 20px rgba(82, 169, 255, 0.15);
+}
+
+[data-theme="light"] .featureTitle {
+  color: #1f2328;
+}
+
+[data-theme="light"] .featureDescription {
+  color: #656d76;
+}
+
+@media screen and (max-width: 996px) {
+  .featureRow {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+    margin: 0 auto;
+  }
 }

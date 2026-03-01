@@ -184,7 +184,11 @@ The homepage renders:
 ## Deployment
 
 - **Platform:** GitHub Pages
-- **Custom domain:** `tft.ninja` (configured via `static/CNAME`)
+- **Method:** `npm run deploy` runs `docusaurus deploy`, which builds the site and pushes the output to the `gh-pages` branch
+- **Branch:** The `gh-pages` branch serves the built static files; `main` contains the source
+- **Config:** `docusaurus.config.ts` defines `organizationName: "matt-landers"` and `projectName: "tft-ninja"` for GitHub Pages deployment
+- **Custom domain:** `tft.ninja` (configured via `static/CNAME`, which is copied into the build output automatically)
+- **No CI/CD workflow:** There are no GitHub Actions workflows; deployment is manual via `npm run deploy`
 - **Riot verification:** `static/riot.txt` must be preserved
 - **Jekyll bypass:** `static/.nojekyll` ensures proper GitHub Pages serving
 

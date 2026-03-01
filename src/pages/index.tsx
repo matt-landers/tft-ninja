@@ -10,18 +10,25 @@ import styles from "./index.module.css";
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx("hero hero--primary", styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
+    <header className={styles.heroBanner}>
+      <div className={styles.heroGrid} />
+      <div className={styles.heroGlow} />
+      <div className={clsx("container", styles.heroContent)}>
+        <Heading as="h1" className={styles.heroTitle}>
           {siteConfig.title}
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p className={styles.heroSubtitle}>
+          Master the fundamentals. Climb the ranks.
+        </p>
         <div className={styles.buttons}>
+          <Link className={styles.ctaBlue} to="/docs/intro">
+            Explore Guides
+          </Link>
           <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro"
+            className={styles.ctaGold}
+            to="https://github.com/matt-landers/tft-ninja"
           >
-            Explore the Docs
+            GitHub
           </Link>
         </div>
       </div>
@@ -33,8 +40,8 @@ export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
+      title={siteConfig.title}
+      description="The missing TeamFight Tactics manual — guides on game mechanics, economy, items, and strategies."
     >
       <HomepageHeader />
       <main>

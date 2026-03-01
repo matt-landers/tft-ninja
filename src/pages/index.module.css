@@ -1,23 +1,143 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
 .heroBanner {
-  padding: 4rem 0;
-  text-align: center;
   position: relative;
   overflow: hidden;
+  padding: 6rem 0 5rem;
+  text-align: center;
+  background: linear-gradient(170deg, #0d1117 0%, #0a1628 60%, #0d1117 100%);
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+/* Tactical grid overlay */
+.heroGrid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(82, 169, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(82, 169, 255, 0.03) 1px, transparent 1px);
+  background-size: 48px 48px;
+  pointer-events: none;
+}
+
+/* Radial blue glow behind title */
+.heroGlow {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 400px;
+  background: radial-gradient(ellipse, rgba(82, 169, 255, 0.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+}
+
+.heroTitle {
+  font-family: var(--tft-font-display, "Merienda", cursive);
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.01em;
+}
+
+.heroSubtitle {
+  font-size: 1.25rem;
+  color: var(--tft-accent-gold, #c8aa6e);
+  font-weight: 400;
+  margin-bottom: 2rem;
+  letter-spacing: 0.02em;
 }
 
 .buttons {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
+}
+
+/* Blue outlined CTA */
+.ctaBlue {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.65rem 1.75rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--tft-accent-blue, #52a9ff);
+  background: transparent;
+  border: 1.5px solid var(--tft-accent-blue, #52a9ff);
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.ctaBlue:hover {
+  background: rgba(82, 169, 255, 0.1);
+  box-shadow: 0 0 20px rgba(82, 169, 255, 0.2);
+  color: var(--tft-accent-blue, #52a9ff);
+  text-decoration: none;
+}
+
+/* Gold outlined CTA */
+.ctaGold {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.65rem 1.75rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--tft-accent-gold, #c8aa6e);
+  background: transparent;
+  border: 1.5px solid var(--tft-accent-gold, #c8aa6e);
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.ctaGold:hover {
+  background: rgba(200, 170, 110, 0.1);
+  box-shadow: 0 0 20px rgba(200, 170, 110, 0.2);
+  color: var(--tft-accent-gold, #c8aa6e);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 4rem 1rem 3rem;
+  }
+
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+
+  .heroGlow {
+    width: 400px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .heroBanner {
+    padding: 3rem 1rem 2.5rem;
+  }
+
+  .heroTitle {
+    font-size: 2rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1.05rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .ctaBlue,
+  .ctaGold {
+    width: 100%;
+    justify-content: center;
+  }
 }

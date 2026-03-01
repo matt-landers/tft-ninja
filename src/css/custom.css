@@ -1,30 +1,202 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
+/* TFT Ninja — Dark Gaming Theme */
 
-/* You can override the default Infima variables here. */
+/* ===== Custom TFT Properties ===== */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --tft-accent-blue: #52a9ff;
+  --tft-accent-blue-dim: rgba(82, 169, 255, 0.15);
+  --tft-accent-gold: #c8aa6e;
+  --tft-accent-gold-dim: rgba(200, 170, 110, 0.15);
+  --tft-bg-primary: #0d1117;
+  --tft-bg-secondary: #161b22;
+  --tft-bg-tertiary: #1c2129;
+  --tft-bg-footer: #010409;
+  --tft-border: #30363d;
+  --tft-text-primary: #ffffff;
+  --tft-text-secondary: #8b949e;
+  --tft-font-body: "Roboto", system-ui, -apple-system, sans-serif;
+  --tft-font-display: "Merienda", cursive;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+/* ===== Infima Variable Overrides ===== */
+:root {
+  --ifm-color-primary: #52a9ff;
+  --ifm-color-primary-dark: #3a9bff;
+  --ifm-color-primary-darker: #2e93ff;
+  --ifm-color-primary-darkest: #0a7dff;
+  --ifm-color-primary-light: #6ab7ff;
+  --ifm-color-primary-lighter: #76bdff;
+  --ifm-color-primary-lightest: #a0d3ff;
+  --ifm-font-family-base: var(--tft-font-body);
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(82, 169, 255, 0.15);
+}
+
+[data-theme="dark"] {
+  --ifm-color-primary: #52a9ff;
+  --ifm-color-primary-dark: #3a9bff;
+  --ifm-color-primary-darker: #2e93ff;
+  --ifm-color-primary-darkest: #0a7dff;
+  --ifm-color-primary-light: #6ab7ff;
+  --ifm-color-primary-lighter: #76bdff;
+  --ifm-color-primary-lightest: #a0d3ff;
+  --ifm-background-color: var(--tft-bg-primary);
+  --ifm-background-surface-color: var(--tft-bg-secondary);
+  --ifm-font-color-base: var(--tft-text-primary);
+  --ifm-font-color-secondary: var(--tft-text-secondary);
+  --ifm-heading-color: var(--tft-text-primary);
+  --ifm-hr-border-color: var(--tft-border);
+  --ifm-toc-border-color: var(--tft-border);
+  --ifm-table-border-color: var(--tft-border);
+  --ifm-code-background: var(--tft-bg-tertiary);
+  --ifm-card-background-color: var(--tft-bg-secondary);
+  --docusaurus-highlighted-code-line-bg: rgba(82, 169, 255, 0.15);
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  background: rgba(13, 17, 23, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--tft-border);
+  box-shadow: none;
+}
+
+.navbar__title {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.navbar__link:hover,
+.navbar__link--active {
+  color: var(--tft-accent-blue);
+}
+
+.navbar-sidebar {
+  background: var(--tft-bg-primary);
+}
+
+/* ===== Footer ===== */
+.footer--dark {
+  background-color: var(--tft-bg-footer);
+  border-top: 1px solid var(--tft-border);
+}
+
+.footer__title {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  color: var(--tft-text-secondary);
+}
+
+.footer__link-item:hover {
+  color: var(--tft-accent-blue);
+}
+
+.footer__copyright {
+  color: var(--tft-text-secondary);
+  font-size: 0.8rem;
+}
+
+/* ===== Sidebar ===== */
+[data-theme="dark"] .menu__link--active:not(.menu__link--sublist) {
+  background: var(--tft-accent-blue-dim);
+  color: var(--tft-accent-blue);
+  border-left: 3px solid var(--tft-accent-blue);
+}
+
+[data-theme="dark"] .menu__link:hover {
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--tft-accent-blue);
+}
+
+[data-theme="dark"] .menu__list-item-collapsible:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+/* ===== Doc Cards ===== */
+[data-theme="dark"] .card {
+  background: var(--tft-bg-secondary);
+  border: 1px solid var(--tft-border);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+[data-theme="dark"] .card:hover {
+  border-color: var(--tft-accent-blue);
+  box-shadow: 0 0 16px var(--tft-accent-blue-dim);
+}
+
+/* ===== Buttons ===== */
+[data-theme="dark"] .button--secondary {
+  background: transparent;
+  border: 1.5px solid var(--tft-accent-blue);
+  color: var(--tft-accent-blue);
+  transition: all 0.2s ease;
+}
+
+[data-theme="dark"] .button--secondary:hover {
+  background: var(--tft-accent-blue-dim);
+  box-shadow: 0 0 16px var(--tft-accent-blue-dim);
+  color: var(--tft-accent-blue);
+}
+
+/* ===== Code Blocks ===== */
+[data-theme="dark"] .prism-code {
+  background: var(--tft-bg-secondary) !important;
+  border: 1px solid var(--tft-border);
+}
+
+/* ===== Pagination ===== */
+[data-theme="dark"] .pagination-nav__link {
+  background: var(--tft-bg-secondary);
+  border: 1px solid var(--tft-border);
+  transition: border-color 0.2s ease;
+}
+
+[data-theme="dark"] .pagination-nav__link:hover {
+  border-color: var(--tft-accent-blue);
+}
+
+/* ===== Admonitions ===== */
+[data-theme="dark"] .alert {
+  background: var(--tft-bg-secondary);
+  border-left-width: 4px;
+}
+
+/* ===== Table of Contents ===== */
+[data-theme="dark"] .table-of-contents__link--active {
+  color: var(--tft-accent-blue);
+}
+
+/* ===== Scrollbar ===== */
+[data-theme="dark"] ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-track {
+  background: var(--tft-bg-primary);
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+  background: var(--tft-border);
+  border-radius: 4px;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+  background: var(--tft-text-secondary);
+}
+
+/* ===== Breadcrumbs ===== */
+[data-theme="dark"] .breadcrumbs__link {
+  transition: color 0.2s ease;
+}
+
+[data-theme="dark"] .breadcrumbs__link:hover {
+  color: var(--tft-accent-blue);
+}
+
+/* ===== Search ===== */
+[data-theme="dark"] .DocSearch-Button {
+  background: var(--tft-bg-secondary);
+  border: 1px solid var(--tft-border);
 }
