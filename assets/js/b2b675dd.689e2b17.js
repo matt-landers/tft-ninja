@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunktft_ninja=self.webpackChunktft_ninja||[]).push([[991],{9775:t=>{t.exports=JSON.parse('{"permalink":"/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunktft_ninja=globalThis.webpackChunktft_ninja||[]).push([[742],{7093(a){a.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"default"}')}}]);
