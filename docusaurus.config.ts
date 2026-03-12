@@ -137,6 +137,19 @@ const config: Config = {
             },
           ],
         },
+        {
+          title: "Legal",
+          items: [
+            {
+              label: "Privacy Policy",
+              to: "/privacy-policy",
+            },
+            {
+              label: "Terms of Service",
+              to: "/terms-of-service",
+            },
+          ],
+        },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} TFT Ninja, Built with Docusaurus.`,
     },
